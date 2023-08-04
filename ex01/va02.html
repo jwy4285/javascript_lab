@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //오브젝트 만드는법
+        let user = {
+            id: 1,
+            username: "ssar",
+            password: "1234"
+        }; //객체
+        console.log("id", user.id);
+        console.log("username", user.username);
+        console.log("password", user.password);
+        console.log(user);
+
+        let board = {
+            id: 1,
+            title: "제목1",
+            content: "내용1",
+            user: user //자바스크립트 오브젝트
+        };
+
+        console.log(board); //문자열
+
+        let data = JSON.stringify(board); // 문자열을 제이슨으로 파싱
+        console.log(data);
+
+        let data2 = JSON.parse(data); //제이슨을 자바스크립트로 다시 파싱
+        console.log(data2);
+
+    </script>
+</body>
+
+</html>
